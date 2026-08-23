@@ -16,6 +16,8 @@
 <meta property="og:url" content="https://www.dotlogiclabs.com/">
 <meta name="twitter:image" content="https://www.dotlogiclabs.com/og-image.png">
 <link rel="canonical" href="https://www.dotlogiclabs.com/">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -47,7 +49,7 @@
     --teal:#5FBFB3;
     --ink:#EDEEE9;
     --ink-dim:#9AA7B0;
-    --ink-faint:#5E6C77;
+    --ink-faint:#7C8994;
     --line:rgba(237,238,233,0.09);
     --line-bright:rgba(237,238,233,0.18);
     --radius:2px;
@@ -272,7 +274,7 @@
   .comp-card{ background:var(--bg); padding:38px 30px; transition:background .25s ease; }
   .comp-card:hover{ background:var(--bg-alt); }
   .comp-icon{ width:38px; height:38px; margin-bottom:26px; color:var(--copper); }
-  .comp-card h4{ font-size:17px; margin-bottom:12px; line-height:1.3; }
+  .comp-card h3{ font-size:17px; margin-bottom:12px; line-height:1.3; }
   .comp-card p{ font-size:14.5px; color:var(--ink-dim); }
   .comp-num{ font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--ink-faint); margin-bottom:16px; display:block; }
 
@@ -282,7 +284,7 @@
   .wwd-item{ border-top:1px solid var(--line); padding:34px 0; }
   .wwd-item:last-child{ border-bottom:1px solid var(--line); }
   .wwd-item-head{ display:flex; justify-content:space-between; align-items:baseline; gap:20px; margin-bottom:14px; }
-  .wwd-item-head h4{ font-size:20px; }
+  .wwd-item-head h3{ font-size:20px; }
   .wwd-item-head span{ font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--ink-faint); white-space:nowrap; }
   .wwd-item ul{ list-style:none; display:flex; flex-direction:column; gap:8px; }
   .wwd-item li{ color:var(--ink-dim); font-size:15px; padding-left:18px; position:relative; }
@@ -295,8 +297,8 @@
   /* ---------- approach ---------- */
   .approach-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:44px 40px; }
   .approach-item{ padding-top:20px; border-top:1px solid var(--line-bright); }
-  .approach-item h4{ font-size:16.5px; margin-bottom:10px; display:flex; align-items:center; gap:10px;}
-  .approach-item h4::before{ content:''; width:6px; height:6px; background:var(--teal); border-radius:50%; flex-shrink:0;}
+  .approach-item h3{ font-size:16.5px; margin-bottom:10px; display:flex; align-items:center; gap:10px;}
+  .approach-item h3::before{ content:''; width:6px; height:6px; background:var(--teal); border-radius:50%; flex-shrink:0;}
   .approach-item p{ font-size:14.5px; color:var(--ink-dim); }
 
   /* ---------- values ---------- */
@@ -304,7 +306,7 @@
   .value-item{ padding:44px 32px; border-left:1px solid var(--line); }
   .value-item:first-child{ padding-left:0; border-left:none; }
   .value-num{ font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--copper); margin-bottom:20px; display:block; }
-  .value-item h4{ font-size:19px; margin-bottom:10px; }
+  .value-item h3{ font-size:19px; margin-bottom:10px; }
   .value-item p{ font-size:14px; color:var(--ink-dim); }
 
   /* ---------- positioning ---------- */
@@ -471,30 +473,30 @@
         <p>Every engagement draws on the same core capabilities — combined differently depending on what the deployment demands.</p>
       </div>
       <div class="comp-grid reveal">
-        <div class="comp-card">
+        <a href="services/pcb-design-embedded-systems/" class="comp-card" style="display:block;">
           <span class="comp-num">01</span>
           <svg class="comp-icon" viewBox="0 0 40 40" fill="none"><rect x="6" y="6" width="28" height="28" rx="1" stroke="currentColor" stroke-width="1.4"/><circle cx="14" cy="14" r="2" fill="currentColor"/><circle cx="26" cy="14" r="2" fill="currentColor"/><circle cx="14" cy="26" r="2" fill="currentColor"/><circle cx="26" cy="26" r="2" fill="currentColor"/><path d="M14 16v6M26 16v6M16 14h6M16 26h6" stroke="currentColor" stroke-width="1.2"/></svg>
-          <h4>PCB Design &amp; Embedded Systems</h4>
+          <h3>PCB Design &amp; Embedded Systems</h3>
           <p>Custom hardware design and optimization for IoT and industrial applications.</p>
-        </div>
-        <div class="comp-card">
+        </a>
+        <a href="services/iot-solutions-automation/" class="comp-card" style="display:block;">
           <span class="comp-num">02</span>
           <svg class="comp-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="4" stroke="currentColor" stroke-width="1.4"/><circle cx="20" cy="8" r="2.2" fill="currentColor"/><circle cx="32" cy="20" r="2.2" fill="currentColor"/><circle cx="20" cy="32" r="2.2" fill="currentColor"/><circle cx="8" cy="20" r="2.2" fill="currentColor"/><path d="M20 12v4M20 24v4M24 20h4M12 20h4" stroke="currentColor" stroke-width="1.2"/></svg>
-          <h4>IoT Solutions &amp; Automation</h4>
+          <h3>IoT Solutions &amp; Automation</h3>
           <p>Scalable deployments for airports, infrastructure, and smart environments.</p>
-        </div>
-        <div class="comp-card">
+        </a>
+        <a href="services/cybersecurity-consulting/" class="comp-card" style="display:block;">
           <span class="comp-num">03</span>
           <svg class="comp-icon" viewBox="0 0 40 40" fill="none"><path d="M20 6l12 5v9c0 8-5.5 13.5-12 15-6.5-1.5-12-7-12-15v-9l12-5z" stroke="currentColor" stroke-width="1.4"/><path d="M15 20l4 4 7-8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <h4>Cybersecurity Consulting</h4>
+          <h3>Cybersecurity Consulting</h3>
           <p>Secure architectures and compliance-oriented design for resilient systems.</p>
-        </div>
-        <div class="comp-card">
+        </a>
+        <a href="services/software-development-integration/" class="comp-card" style="display:block;">
           <span class="comp-num">04</span>
           <svg class="comp-icon" viewBox="0 0 40 40" fill="none"><rect x="5" y="9" width="30" height="20" rx="1" stroke="currentColor" stroke-width="1.4"/><path d="M13 30l-2 5h18l-2-5" stroke="currentColor" stroke-width="1.4"/><path d="M12 16l4 4-4 4M22 24h6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <h4>Software Development &amp; Integration</h4>
+          <h3>Software Development &amp; Integration</h3>
           <p>Building reporting tools, dashboards, and support applications for end-to-end workflows.</p>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -509,27 +511,27 @@
       </div>
       <div class="wwd-list reveal">
         <div class="wwd-item">
-          <div class="wwd-item-head"><h4>Enterprise Solutions &amp; Consulting</h4><span class="mono">01 / 04</span></div>
+          <div class="wwd-item-head"><h3>Enterprise Solutions &amp; Consulting</h3><span class="mono">01 / 04</span></div>
           <ul>
             <li>Secure IoT networks, smart automation, large-scale deployments</li>
             <li>High-efficiency, future-proof designs for airports, infrastructure, and manufacturing</li>
           </ul>
         </div>
         <div class="wwd-item">
-          <div class="wwd-item-head"><h4>Custom Hardware &amp; Embedded Development</h4><span class="mono">02 / 04</span></div>
+          <div class="wwd-item-head"><h3>Custom Hardware &amp; Embedded Development</h3><span class="mono">02 / 04</span></div>
           <ul>
             <li>PCB design and device prototyping</li>
             <li>Firmware engineering</li>
           </ul>
         </div>
         <div class="wwd-item">
-          <div class="wwd-item-head"><h4>Cybersecurity-Focused Architecture</h4><span class="mono">03 / 04</span></div>
+          <div class="wwd-item-head"><h3>Cybersecurity-Focused Architecture</h3><span class="mono">03 / 04</span></div>
           <ul>
             <li>Protecting data and devices across IoT-enabled ecosystems</li>
           </ul>
         </div>
         <div class="wwd-item">
-          <div class="wwd-item-head"><h4>Product Line-up <span class="mono" style="color:var(--ink-faint); font-size:12px;">(In Development)</span></h4><span class="mono">04 / 04</span></div>
+          <div class="wwd-item-head"><h3>Product Line-up <span class="mono" style="color:var(--ink-faint); font-size:12px;">(In Development)</span></h3><span class="mono">04 / 04</span></div>
           <ul>
             <li>Ready-to-use, modifiable products and toolkits for engineers, startups, and educational innovators</li>
           </ul>
@@ -545,12 +547,12 @@
         <h2>Six principles behind every build.</h2>
       </div>
       <div class="approach-grid reveal">
-        <div class="approach-item"><h4>Scalability &amp; Efficiency</h4><p>Optimized for performance and low-power operation.</p></div>
-        <div class="approach-item"><h4>Open-Source Integration</h4><p>Cost-effective, transparent, and flexible solutions.</p></div>
-        <div class="approach-item"><h4>OEM Collaboration</h4><p>Expert troubleshooting and long-term support.</p></div>
-        <div class="approach-item"><h4>Security &amp; Reliability First</h4><p>Ensuring resilient deployments from day one.</p></div>
-        <div class="approach-item"><h4>Future-Proof Technology</h4><p>Leveraging open standards and continuous innovation.</p></div>
-        <div class="approach-item"><h4>Community &amp; Accessibility</h4><p>Enabling others to learn, build, and innovate with our products.</p></div>
+        <div class="approach-item"><h3>Scalability &amp; Efficiency</h3><p>Optimized for performance and low-power operation.</p></div>
+        <div class="approach-item"><h3>Open-Source Integration</h3><p>Cost-effective, transparent, and flexible solutions.</p></div>
+        <div class="approach-item"><h3>OEM Collaboration</h3><p>Expert troubleshooting and long-term support.</p></div>
+        <div class="approach-item"><h3>Security &amp; Reliability First</h3><p>Ensuring resilient deployments from day one.</p></div>
+        <div class="approach-item"><h3>Future-Proof Technology</h3><p>Leveraging open standards and continuous innovation.</p></div>
+        <div class="approach-item"><h3>Community &amp; Accessibility</h3><p>Enabling others to learn, build, and innovate with our products.</p></div>
       </div>
     </div>
   </section>
@@ -562,10 +564,10 @@
         <h2>What we optimize for, every time.</h2>
       </div>
       <div class="values-band reveal">
-        <div class="value-item"><span class="value-num">I.</span><h4>Innovation</h4><p>Pushing boundaries to stay ahead of emerging technology.</p></div>
-        <div class="value-item"><span class="value-num">II.</span><h4>Reliability</h4><p>Delivering robust and consistent performance.</p></div>
-        <div class="value-item"><span class="value-num">III.</span><h4>Professionalism</h4><p>Clear, transparent, client-focused service.</p></div>
-        <div class="value-item"><span class="value-num">IV.</span><h4>Sustainability</h4><p>Designing energy-conscious and maintainable systems.</p></div>
+        <div class="value-item"><span class="value-num">I.</span><h3>Innovation</h3><p>Pushing boundaries to stay ahead of emerging technology.</p></div>
+        <div class="value-item"><span class="value-num">II.</span><h3>Reliability</h3><p>Delivering robust and consistent performance.</p></div>
+        <div class="value-item"><span class="value-num">III.</span><h3>Professionalism</h3><p>Clear, transparent, client-focused service.</p></div>
+        <div class="value-item"><span class="value-num">IV.</span><h3>Sustainability</h3><p>Designing energy-conscious and maintainable systems.</p></div>
       </div>
     </div>
   </section>
