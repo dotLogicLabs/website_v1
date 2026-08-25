@@ -47,9 +47,9 @@
   .eyebrow::before{
     content:'';
     width:6px; height:6px;
-    background:var(--copper);
+    background:currentColor;
     border-radius:50%;
-    box-shadow:0 0 0 3px rgba(201,125,74,0.18);
+    box-shadow:0 0 0 3px color-mix(in srgb, currentColor 18%, transparent);
     flex-shrink:0;
   }
 
@@ -274,7 +274,6 @@
   .pos-card{ background:var(--bg-panel); padding:56px 48px; position:relative; }
   .pos-card.teal-accent{ background:var(--bg-alt); }
   .pos-card .eyebrow{ color:var(--teal); }
-  .pos-card.teal-accent .eyebrow::before{ background:var(--teal); box-shadow:0 0 0 3px rgba(95,191,179,0.18); }
   .pos-card h3{ font-size:26px; margin-bottom:16px; line-height:1.25; }
   .pos-card p{ color:var(--ink-dim); font-size:15.5px; }
 
